@@ -1,0 +1,8 @@
+// override some default varaibles in bootstrap original source file
+$theme-colors: (
+    "primary": #ffa726,
+    "secondary": #b0bec5
+);
+
+// import bootstrap source file
+@import "../bootstrap/scss/bootstrap";

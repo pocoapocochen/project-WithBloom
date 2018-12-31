@@ -1,0 +1,209 @@
+// other custom styles
+
+$color-primary: #ffa726;
+$title-font: 4rem;
+$timandtem-font: 2rem;
+$brdandscl-font: 1.5rem;
+$locandmsg-font: 1.25rem;
+$navitem-font: 1rem;
+$lg: 1.25;
+
+
+body {
+    font-family: 'KoHo', sans-serif;
+    background: #ffffff;
+}
+
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffcc80;
+    z-index: 3;
+
+    .navbar-brand {
+        font-size: $brdandscl-font; 
+    }
+
+    .nav-item {
+        font-size: $navitem-font; 
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
+}
+
+#showcase {
+    background: url("../img/main.jpg") center center / cover no-repeat;
+    min-height: 500px;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: $title-font;
+        line-height: 1;
+    }
+
+}
+
+#today {
+    
+    #timeinfo {
+        font-size: $timandtem-font;
+    }
+
+    .wi{
+        font-family: 'weathericons';
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: normal;
+        color: $color-primary;
+    }
+
+    #locationinfo {
+        font-size: $locandmsg-font;
+    }
+    
+    #tempinfo {
+        font-size: $timandtem-font;
+    }
+    
+    #tempscale {
+        font-size: $brdandscl-font;
+        color: #ef5350;
+        cursor: pointer;
+    }
+    
+    #msg {
+        font-size: $locandmsg-font;
+    }
+    
+}
+
+#gallery {
+    
+    i {
+        opacity: 0.5;
+    }
+
+}
+
+#contact {
+
+    .icon {
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        color: $color-primary;
+        transition: color, 0.3s;
+    }
+
+}
+
+#footer {
+    font-weight: 100;
+
+    p {
+        font-size: .6rem;
+    }
+}
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 0.625rem;
+    right: 2%;
+    z-index: 1000;
+    color: $color-primary;
+    cursor: pointer; 
+    opacity: 0.5;
+}
+
+#top:hover {
+    opacity: 1;
+}
+
+@media(min-width: 576px){
+
+    .navbar {
+
+        .navbar-brand {
+            font-size: $brdandscl-font * $lg;
+        }
+    
+        .nav-item {
+            font-size: $navitem-font * $lg; 
+        }
+
+    }
+
+    #today {
+    
+        #timeinfo {
+            font-size: $timandtem-font * $lg;
+        }
+    
+        #locationinfo {
+            font-size: $locandmsg-font * $lg;
+        }
+        
+        #tempinfo {
+            font-size: $timandtem-font * $lg;
+        }
+        
+        #tempscale {
+            font-size: $brdandscl-font * $lg;
+        }
+        
+        #msg {
+            font-size: $locandmsg-font * $lg;
+        }
+        
+    }
+
+}
+
+@media(min-width: 768px){
+    
+    #today, #about, #product {
+        height: 100vh;
+    }
+
+    #gallery {
+        margin-top: 5rem; 
+    } 
+
+    .navbar {
+        background-color: transparent; 
+        
+        .nav-link:hover {
+            border-bottom: 2px dotted #212121;
+            transition: border 0.5s;
+        }
+    }
+
+    #showcase {
+        min-height: 750px;
+
+        h1 {
+            font-size: $title-font * 1.5;
+        }
+    }
+
+    #footer {
+        
+        .nav-link:hover {
+            border-bottom: 1px solid #eeeeee;
+        }
+    }
+    
+}
