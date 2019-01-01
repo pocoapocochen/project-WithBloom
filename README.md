@@ -2,6 +2,11 @@
 * A flower design service landing webpage
 * [Live](https://pocoapocochen.github.io/project-WithBloom/) version
 
+## User Story
+* I can browse the product service information.
+* I can see the local weather and random pictures.
+* When I scroll down the webpage, a Go-to-top button will appear.
+
 ## Using
 * HTML
 * SCSS (variable, nesting)
