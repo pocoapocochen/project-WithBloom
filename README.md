@@ -9,7 +9,7 @@
 
 ## Using
 * HTML
-* SCSS (variable, nesting)
+* SCSS (variables, nesting)
 * jQuery
 * Bootstrap 4 (modify the default color)
 * Font Awesome
